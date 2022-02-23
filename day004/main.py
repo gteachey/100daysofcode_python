@@ -27,20 +27,20 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
-hand_choices = ['rock', 'paper', 'scissors']
-winning_hands = {
-    'paper': 'rock',
-    'scissors': 'paper',
-    'rock': 'scissors'
-}
+
+hand_choices = [rock, paper, scissors]
+print_hands = ['rock', 'paper', 'scissors']
 print("Time to play some ROCK PAPER SCISSORS!")
-user_hand = input(f"What's your choice? {' '.join(hand_choices)}\n")
-comp_choice = random.choice(hand_choices)
-print( winning_hands[user_hand])
-print(comp_choice)
+
+choices = '\n'.join(map(str, [f"{index}: {value}" for (index, value) in enumerate(print_hands)]))
+user_hand = int(input(f"What's your choice? \n{choices}\nInput: "))
+comp_choice = random.randint(0, 2)
+print(f"You: {hand_choices[user_hand]} vs Computer: {hand_choices[comp_choice]}")
+
+
 if user_hand == comp_choice:
     print("Tie!!")
-elif winning_hands[user_hand] == comp_choice:
-    print("You Win!")
+elif (user_hand + 1) % 3 == comp_choice:
+    print("You Lost!")
 else:
-    print("Computer wins!")
+    print("You Won!")

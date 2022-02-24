@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+            body {text-align: center;}
+
+
+    </style>
+</head>
+<body>
+<h1>Hello World!</h1>
+<h2 text-align="center">{{ 5 * 6}}</h2>
+<h3 text-align="center">Random Number: {{ num }}</h3>
+<a href="{{ url_for('get_blog') }}">Go to blog</a>
+</body>
+<footer>
+    <p>Copyright {{ year }}. Built by {{ my_name }}</p>
+</footer>
+</html>

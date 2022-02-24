@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+            body {text-align: center;}
+
+
+    </style>
+</head>
+<body>
+<h1>Hey {{ guess_name }}</h1>
+<h2>I think you are {{ gender }}...</h2>
+<h3>And maybe {{ age }} years old.</h3>
+<h3>You're most likely from either:
+    {% for country in nationality %}
+    {{ country['country_id'] }}
+    {% endfor %}
+</h3>
+</body>
+<footer>
+    <p>Copyright {{ year }}. Built by {{ my_name }}</p>
+</footer>
+</html>

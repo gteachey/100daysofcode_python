@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+/*
+img {
+    background-color: red
+}
+*/
+
+/*********************CLASS SELECTORS*****************/
+#heading {
+    color: blue;
+}
+
+/*********************CLASS SELECTORS*****************/
+.bacon {
+    background-color: red;
+    }
+
+.broccoli {
+    background-color: none;
+    width: 12%;
+}
+
+.circular {
+
+    border-radius: 100%;
+    }

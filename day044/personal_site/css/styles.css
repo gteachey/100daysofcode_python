@@ -1,0 +1,26 @@
+body {
+    background-color: #CFFFDC;
+}
+hr {
+    width: 300px;
+    border-color: #93FFD8;
+    border-style: dotted none none none;
+    width: 10%;
+    border-width: 10px;
+    height: 5px
+}
+img {
+    height: 250px;
+    border-radius: 100%;
+
+}
+img:hover {
+    background-color: green;
+}
+h1 {
+    color: #548CFF;
+}
+
+h3 {
+    color: #548CFF;
+}

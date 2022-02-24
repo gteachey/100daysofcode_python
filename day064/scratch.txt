@@ -1,0 +1,54 @@
+
+
+        # print(f"RESPONSE JSON\n\n{response_json}\n\n\n\n\n\n")
+        # results = response_json['results']
+        # print(f"RESULTS OUTPUT\n\n\n{results}\n\n\n\n\n\n\n")
+
+#         # {
+#   "page": 1,
+#   "results": [
+#     {
+#       "adult": false,
+#       "backdrop_path": "/jlQJDD0L5ZojjlS0KYnApdO0n19.jpg",
+#       "genre_ids": [
+#         28,
+#         12,
+#         14,
+#         878
+#       ],
+#       "id": 19995,
+#       "original_language": "en",
+#       "original_title": "Avatar",
+#       "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+#       "popularity": 440.545,
+#       "poster_path": "/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+#       "release_date": "2009-12-10",
+#       "title": "Avatar",
+#       "video": false,
+#       "vote_average": 7.5,
+#       "vote_count": 24706
+#     },
+        # print(db.session.query(Movie.query.filter_by(
+        #             title=title).exists()
+        #             )
+        #         )
+
+        # try:
+        #     print(request.form['title'])
+        #     new_movie = Movie(
+        #         title=request.form['title'],
+        #         year=request.form['year'],
+        #         description=request.form['description'],
+        #         rating=request.form['rating'],
+        #         ranking=request.form['ranking'],
+        #         review=request.form['review'],
+        #         img_url=request.form['img_url']
+        #         )
+        #     print(new_movie.__dict__['title'])
+        #     db.session.add(new_movie)
+        #     db.session.commit()
+        #     
+        # except exc.IntegrityError:
+        #     db.session.rollback()
+
+        

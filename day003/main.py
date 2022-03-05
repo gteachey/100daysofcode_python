@@ -23,7 +23,29 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-#Write your code below this line 👇
+# Write your code below this line 👇
+choice = input(
+    "We start at a crossroads. There's a path north, as well as to the east and west.\nWhich way would you like to go? [E, W, N]\n").lower()
 
+if choice == "e":
+    print(
+        "While walking along you fell into a pit.\nYou've broken your leg, once someone's found you they'll take you back to town.")
+elif choice == 'w':
+    print("WOW! YOU FOUND THE TREASURE! GOOD JOB!")
+else:
+    print('''
+               (  .      )
+           )           (              )
+                 .  '   .   '  .  '  .
+        (    , )       (.   )  (   ',    )
+         .' ) ( . )    ,  ( ,     )   ( .
+      ). , ( .   (  ) ( , ')  .' (  ,    )
+     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+ jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ ''')
+    print(
+        "You're kind of oblivious. If you weren't you would have realized that warm feeling all around you were the trees burning.\n A burning tree has fallen behind you, blocking your path of escape.\n So...you're dead...")
+
+print("Thanks for playing!")
